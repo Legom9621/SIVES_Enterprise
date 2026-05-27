@@ -1,0 +1,30 @@
+/* Cambiar color de fondo al hacer hover */
+.nav-link:hover {
+    color: white; 
+    background-color: #6c757d; /* Color gris */
+}
+
+.nav-link,
+.nav-link:hover {
+    color: white; 
+}
+
+/* Estilo para las celdas de la tabla */
+.grid-cell {
+    width: 100%; /* Ancho fijo de la celda */
+    height: 200px; /* Alto fijo de la celda */
+    border: 1px solid #ccc; /* Borde para visualización */
+    overflow-y: auto; /* Hacer scrollable verticalmente */
+    padding: 10px; /* Espacio interno para los botones */
+}
+
+
+/* Estilo para las celdas de la tabla */
+.grid-cell {
+    width: 100%; /* Ancho fijo de la celda */
+    height: 200px; /* Alto fijo de la celda */
+    border: 1px solid #ccc; /* Borde para visualización */
+    overflow-y: auto; /* Hacer scrollable verticalmente */
+    padding: 10px; /* Espacio interno para los botones */
+}
+

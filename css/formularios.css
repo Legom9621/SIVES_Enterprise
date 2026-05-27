@@ -1,0 +1,943 @@
+body {
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+  color: black !important;
+}
+
+*, ::after, ::before {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+/* Estilos para el formulario */
+
+        /* Estilos para la tabla que se ajusta al contenido */
+        .tabla-contenido-ajustado {
+            width: auto;
+            border-collapse: collapse;
+            table-layout: auto; /* Clave: permite que las columnas se ajusten al contenido */
+            
+            display: inline-table;
+            justify-content: center;
+            margin: 20px 0;
+            overflow-x: auto; /* Previene desbordes en tablas grandes */
+            
+        }
+        
+        /* Forzar que el contenido no haga saltos de línea */
+        .tabla-contenido-ajustado tr,
+        .tabla-contenido-ajustado th,
+        .tabla-contenido-ajustado td {
+            white-space: nowrap; /* Evita saltos de línea */
+            text-align: center;
+            border-bottom: 2px solid #0e0d0d;
+            padding: revert-layer;
+            transition: all 0.2s;
+            font-size: small;
+            width: auto; /* Permite ajuste dinámico */
+            max-width: 100%;
+
+            border-collapse: collapse;
+            table-layout: auto;       /* Clave para adaptación al contenido */
+        }
+
+        .tabla-contenido-ajustado .no-records {
+            text-align: center;
+            font-style: italic;
+            color: #701313;
+            font-size: 1.2em;
+            font-weight: bold;
+            padding: 20px;
+            background-color: #fafafa;
+       }
+        thead, tbody, tfoot {
+          border-color: inherit;
+          border-style: solid;
+          border-width: 0;
+          width: auto;
+          max-width: 100%;
+          text-align: inherit;
+        }
+        .form-rowag {
+            display: grid;
+            flex-wrap: wrap; 
+            margin-right: auto;
+            /*margin-left: auto;*/
+            padding: 0px;
+        }
+        .col-estado {
+        width: initial;
+        padding: initial;
+        }
+        /* Encabezados de tabla */
+        .tabla-contenido-ajustado th {
+          background-color: #f8f9fa;
+          color: #0d2064;
+          font-weight: 600;
+          position: sticky;
+          top: 0;
+        }
+
+                /* Filas de tabla */
+        .tabla-contenido-ajustado tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+        
+        .tabla-contenido-ajustado tr:hover {
+            background-color: #f1f8ff;
+            transition: background-color 0.2s ease;
+        }
+        
+        /* Contenedor con scroll horizontal para tablas muy amplias */
+        .tabla-contenedor {
+            width: 100%;
+            overflow-x: auto;
+            border-radius: 6px;
+            border: 1px solid #e1e1e1;
+        }
+
+.form-group {
+  margin: -35px;
+  padding: 15px;
+  text-align: inherit;
+  margin-left: 0;
+  }
+
+  .form-groupr {
+    margin-bottom: 0.5rem;
+    padding: 10px;
+    text-align: inherit;
+    margin-left: 0px;
+  }
+
+  .form-group1 {
+    margin-bottom: -0.5rem;
+    padding: 3px;
+    text-align: inherit;
+    margin-left: -40px;
+  }
+  .form-groupfc {
+    margin-bottom: -0.5rem;
+    padding: 5px;
+    text-align: inherit;
+    margin-left: -35%;
+}
+
+.form-groupec {
+  margin-bottom: -0.5rem;
+  padding: 5px;
+  text-align: inherit;
+  margin-left: -31%;
+  margin-right: -31%;
+}
+
+  /* Estilos para los botones */
+  .btn {
+    margin-right: 0;
+    align-content: center;
+  }
+
+.rounded-form-container {
+  border: 0px solid #ccc; /* Borde del contenedor */
+  border-radius: 10px; /* Borde redondeado */
+  padding: 118px; /* Espaciado interno */
+  margin: 0 auto; /* Centrar el contenedor horizontalmente */
+}
+
+.rounded-row {
+  border: 1px solid #ccc; /* Borde del contenedor */
+  margin: 5px; /* Puedes ajustar el valor según tu diseño */
+  border-radius: 10px; /* Puedes ajustar el valor según tu diseño */
+  background-color: #f8f9fa; /* Puedes ajustar el color de fondo según tu diseño */
+  padding: 5px; /* Puedes ajustar el valor según tu diseño */
+}
+  /* Estilos para el contenedor */
+  .col-md-10 {
+    flex: 0 0 auto;
+    width: 83.33333333%;
+    background: linear-gradient(to bottom, silver, rgb(65, 65, 65));
+  }
+
+  .col-sm-6 {
+    flex: 0 0 auto;
+    width: 41%;
+  }
+
+  .form-rowec {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 25px;
+    margin-left: 50px;
+    padding: 60px;
+  }
+
+  .form-rowec1 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: auto;
+    margin-left: Auto;
+    padding: 5%;
+  }
+/* Estilos para el cuerpo */
+  
+  /* Estilos para los campos de entrada */
+  .form-control .table {
+    border-radius: 30px;
+    display: table;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 150;
+    line-height: 1.5;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color:rgb(249, 249, 249);
+    background-clip: padding-box;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  }
+
+  .form-row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: 25px;
+    margin-left: 0;
+    padding: 5px;
+}
+
+.form-row1 {
+    width: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: initial;
+    padding: 6px;
+    border-radius: 8px;
+    font-size: 12px;
+}
+
+legend {
+  float: left;
+  width: 100%;
+  padding: 0;
+  margin-bottom: -0.5rem;
+  font-size: calc(1.275rem + 0.3vw);
+  line-height: inherit;
+}
+
+  /* Estilos para los botones */
+    .btn-group-sm > .btn, .btn-sm {
+      --bs-btn-padding-y: 4px;
+      --bs-btn-padding-x: 20%;
+      --bs-btn-font-size: 12px;
+      --bs-btn-border-radius: var(--bs-border-radius-sm);
+    }
+ 
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    width: 62px;
+    padding: 5px;
+  }
+
+  .btn-primarya {
+    background-color: #007bff;
+    border-color: #007bff;
+    width: 74px;
+    padding: 5px;
+  }
+  
+  .btn-primarya:hover {
+    background-color: #545557;
+    border-color: #fcfcfc;
+  }
+  
+  .btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+    padding: 5px;
+  }
+  
+  .btn-success:hover {
+    background-color: #218838;
+    border-color: #218838;
+    background-color: #545557;
+    border-color: #fcfcfc;
+  }
+  
+  .btn-warning {
+    background-color: #ffc107;
+    border-color: #ffc107;
+    padding: 5px;
+  }
+  
+  .btn-warning:hover {
+    background-color: #e0a800;
+    border-color: #e0a800;
+    background-color: #545557;
+    border-color: #fcfcfc;
+  }
+  
+  .btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    width: 60px;
+    padding: 5px;
+  }
+
+  .btn-dangera {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    width: 49%;
+    padding: 5px;
+  }
+  
+  .btn-danger:hover {
+    background-color: #545557;
+    border-color: #fcfcfc;
+  }
+
+  .btn-dangera:hover {
+    background-color: #545557;
+    border-color: #fcfcfc;
+  }
+
+  .fcc-btn {
+    background-color: #70adbb87;
+    color: #1111117d;
+    padding: 3% 8%;
+    text-decoration: none;
+    border-radius: 15%;
+    font-weight: bold;
+  }
+
+  .fcc-btn:hover {
+    background-color: #f2f3f3b7;
+    color: #1111117d;
+    border-radius: 15%;
+  }
+  
+  .contenedor-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-modal.mostrar {
+    background-color: black;
+    z-index: 1;
+    opacity: 0.9;
+}
+
+.contenedor-modal .modal {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 500px;
+    padding: 50px;
+    background-color: #fff;
+    opacity: 1;
+}
+
+.formulariocaja
+{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: auto;
+    padding: 2px;
+    overflow: hidden;  
+    border: 0 solid rgb(0, 0, 0);
+    border-radius: 5%px;
+    background: url('/images/fondo.png') no-repeat center center;
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.6); /* Color blanco semi-transparente */
+    background-blend-mode: lighten; /* Mezcla la imagen con el color de fondo */
+    color: black;
+    max-width: 100%;
+    padding-top: 0;
+}
+
+.fs-1 {
+  font-size: calc(1.05rem + 1.5vw) !important;
+}
+
+.modal .modal-body{
+  --bs-modal-margin: 3.75rem;
+  --bs-modal-box-shadow: var(--bs-box-shadow);
+  --bs-modal-zindex: 1095;
+  --bs-modal-padding: 1rem;
+  margin: auto auto;
+  padding: 1rem;
+  width: auto;
+  border-radius: 10px;
+  height: auto;
+  position: inherit;
+  flex: 1 1 auto;
+  padding: var(--bs-modal-padding);
+  overflow-y: auto; /* Habilitamos el desplazamiento vertical si es necesario */
+  max-height: calc(120vh - 220px); /* Altura máxima del modal-body */
+  --bs-modal-width: 750px;
+  text-align: inherit;
+}
+
+/* Estilo para el texto dentro del modal-body */
+.modal-body p,
+.modal-body ul,
+.modal-body b,
+.modal-body ol{
+  margin-bottom: 15px; /* Espacio entre párrafos y listas */
+  line-height: 1.6; /* Espaciado entre líneas */
+  word-wrap: break-word; /* Envolver palabras largas */
+}
+
+.modal-body ul li {
+  margin-bottom: 5px; /* Espacio entre elementos de la lista */
+}
+
+/* Estilo para hacer el fondo del modal semi-transparente */
+.modal-content {
+  background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente blanco */
+  border: none; /* Quitamos el borde del modal */
+  box-shadow: 2px 2px 10px rgba(173, 144, 12, 0.3); /* Sombra ligera */
+  left: 50px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 100%; /* Ancho máximo del modal */
+}
+
+.form-control1 {
+  display: block;
+  width: 75%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--bs-body-color);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: var(--bs-body-bg);
+  background-clip: padding-box;
+  border: var(--bs-border-width) solid var(--bs-border-color);
+  border-radius: var(--bs-border-radius);
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: var(--bs-modal-width);
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .modal-contents {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    box-shadow: 2px 2px 10px rgba(173, 144, 12, 0.3);
+    left: 50px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .modal-dialog {
+      max-width: 90%;
+      margin: auto;
+    }
+
+  .modal-content {
+      background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente blanco */
+      border: none; /* Quitamos el borde del modal */
+      box-shadow: 2px 2px 10px rgba(173, 144, 12, 0.3); /* Sombra ligera */
+      left: 15%;
+      position: relative;
+      display: inherit;
+      flex-direction: column;
+      width: 85%;
+      max-width: 100%; /* Ancho máximo del modal */
+    }
+  }
+
+.modal-header {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--bs-modal-header-padding);
+  border-bottom: var(--bs-modal-header-border-width) solid var(--bs-modal-header-border-color);
+  border-top-left-radius: var(--bs-modal-inner-border-radius);
+  border-top-right-radius: var(--bs-modal-inner-border-radius);
+  align-self: center;
+}
+
+.legend {
+  float: left;
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 5.5rem;
+  font-size: calc(1.275rem + 0.3vw);
+  line-height: inherit;
+}
+.legend {
+  float: none;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 0.5rem;
+  font-size: calc(1.275rem + 0.3vw);
+  line-height: inherit;
+}
+  /* Estilos para el contenedor */
+  .containerFrm {
+    max-width: inherit;
+    margin: 17px -30px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    width: 100%;
+  }
+
+  .containerFrm {
+    max-width: inherit;
+    margin: 10px;
+    font-size: 100%;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border-radius: 30px;
+    line-height: 1.5;
+    text-align: center;
+  }
+  .containerFrmr {
+    max-width: inherit;
+    font-size: 20%;
+    background-color: rgb(255, 255, 255);
+    color: rgb(20, 20, 20);
+    border-radius: 30px;
+    line-height: 0.5;
+    text-align: justify;
+    width: 100%;
+    margin: auto;
+  }
+
+  .fieldset {
+    min-width: auto;
+    padding: 20px;
+    margin: 5px;
+    border-radius: 30px;
+  }
+
+  .formulariocajas
+  {
+      width: 100%;
+      height: 100%;
+      position: inherit;
+      margin: auto;
+      padding: 2px;
+      overflow: hidden;  
+      border: 0 solid rgb(0, 0, 0);
+      border-radius: 30px;
+      background-color: rgb(255, 255, 255);
+      color: black;
+      max-width: 100%;
+  }
+
+  .scrollable-div {
+    width:85%; /* Ancho del div */
+    height: 100%; /* Alto del div */
+    overflow-y: auto; /* Scroll vertical automático */
+    overflow: auto;
+    overflow-x: hidden; /* Oculta el scroll horizontal */
+    border: 1px solid #ccc; /* Borde opcional */
+    padding: 0%; /* Espaciado interno opcional */
+    margin-left: auto;
+    max-width: 100%;
+  }
+
+  .scrollable-activefec {
+    width: 100%;
+    height: auto;
+    overflow-y: auto;
+    overflow: auto;
+    overflow-x: auto;
+    border: 1px solid #ccc;
+    padding: 0;
+    margin-left: 0;
+    background: url('/images/fondo.png') no-repeat center center;
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.6); /* Color blanco semi-transparente */
+    background-blend-mode: lighten; /* Mezcla la imagen con el color de fondo */
+}
+
+  .scrollable-active {
+    width:100%; /* Ancho del div */
+    height: 100%; /* Alto del div */
+    overflow-y: auto; /* Scroll vertical automático */
+    overflow: auto;
+    overflow-x: auto; /* Oculta el scroll horizontal
+    border: 1px solid #ccc; /* Borde opcional */
+    padding: 0%; /* Espaciado interno opcional */
+    margin-left: auto;
+    background: url('/images/fondo.png') no-repeat center center;
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.6); /* Color blanco semi-transparente */
+    background-blend-mode: lighten; /* Mezcla la imagen con el color de fondo */
+    padding-top: 5%;
+  }
+
+  .search{
+    margin-left: initial;
+    width: auto;
+    text-align: -webkit-center;
+    /* min-width: 0; */
+    padding: 10px;
+    border: 0;
+    line-height: 1em;
+    max-width: 100%;
+  }
+
+  .fieldsetreg {
+    min-width: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    line-height: 5em;
+  }
+
+  .fieldsetregdata {
+    max-width: 100%;
+    padding: 20px;
+    margin: auto;
+    border: 0;
+    line-height: 0;
+    width: 65%;
+  }
+
+
+
+  /* ============================================================
+   ESTILO TIPO BOOTSTRAP PARA ENCABEZADOS DE TABLA
+   ============================================================ */
+.table thead th {
+    background-color: #f8f9fa;
+    color: #333;
+    font-weight: 600;
+    vertical-align: middle;
+    text-align: center;
+    padding: 12px 16px;
+    border-bottom: 2px solid #dee2e6;
+    white-space: nowrap;
+}
+
+    /* CONTENEDOR PRINCIPAL CON SCROLL HORIZONTAL */
+    .table-scroll-container {
+        width: 100%;
+        /*overflow-x: auto;
+        -webkit-overflow-scrolling: touch;*/
+        border: 1px solid #dee2e6;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        background: white;
+        margin-bottom: 20px;
+    }
+    
+    /* ESTILOS BASE DE LA TABLA */
+    .tablesprod {
+        width: 100%;
+        min-width: 100%; /* Se expande según contenido */
+        background-color: rgba(231, 229, 229, 0.125);
+        border-collapse: separate;
+        border-spacing: 0;
+        table-layout: auto; /* Permite que las columnas se expandan */
+    }
+    
+    /* ENCABEZADOS DE LA TABLA */
+    .tablesprod thead th {
+        background-color: rgba(231, 229, 229, 0.125);
+        color: #212529;
+        font-weight: 600;
+        vertical-align: middle;
+        text-align: center;
+        padding: 12px 16px;
+        border-bottom: 2px solid #dee2e6;
+        white-space: nowrap; /* Evita salto de línea en encabezados */
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        backdrop-filter: blur(10px);
+    }
+    .tablesprod thead th:hover {
+        background-color: #96949480;
+        color: #135699;
+    }
+    
+    /* CELDAS DE LA TABLA */
+    .tablesprod tbody td {
+        vertical-align: middle;
+        text-align: center;
+        padding: 12px 16px;
+        border-bottom: 1px solid #e9ecef;
+        white-space: nowrap; /* Mantiene contenido en una línea */
+        transition: background-color 0.2s ease;
+    }
+    
+    /* HOVER EN FILAS */
+    .tablesprod tbody tr:hover td {
+        background-color: rgba(0, 123, 255, 0.5);
+    }
+    
+    /* FILAS IMPARES (ZEBRA STRIPING) */
+    .tablesprod tbody tr:nth-child(odd) {
+        background-color: rgba(248, 249, 250, 0.3);
+    }
+    
+    /* FILAS PARES */
+    .tablesprod tbody tr:nth-child(even) {
+        background-color: rgba(231, 229, 229, 0.08);
+    }
+    
+    /* ÚLTIMA FILA SIN BORDE INFERIOR */
+    .tablesprod tbody tr:last-child td {
+        border-bottom: none;
+    }
+    
+    /* PRIMERA Y ÚLTIMA CELDA DE CADA FILA */
+    .tablesprod tbody td:first-child {
+        border-left: 1px solid transparent;
+    }
+    
+    .tablesprod tbody td:last-child {
+        border-right: 1px solid transparent;
+    }
+    
+    /* ESTILOS PARA ENLACES DENTRO DE LA TABLA */
+    .tablesprod a {
+        color: #007bff;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.2s ease;
+        display: inline-block;
+        max-width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        vertical-align: middle;
+    }
+    
+    .tablesprod a:hover {
+        color: #0056b3;
+        text-decoration: underline;
+    }
+    
+    /* ESTILOS PARA BOTONES DENTRO DE LA TABLA */
+    .tablesprod .btn-primaryfechas,
+    .tablesprod .btn-successfechas,
+    .tablesprod .btn-dangerfechas,
+    .tablesprod .btn-submit {
+        padding: 6px 12px;
+        margin: 2px 4px;
+        font-size: 12px;
+        font-weight: 500;
+        border-radius: 4px;
+        white-space: nowrap;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        vertical-align: middle;
+        min-width: 70px;
+    }
+    
+    /* ESTILOS PARA ETIQUETAS DE ESTADO */
+    .tablesprod .label {
+        display: inline-block;
+        padding: 4px 10px;
+        font-size: 12px;
+        font-weight: 600;
+        border-radius: 20px;
+        white-space: nowrap;
+        min-width: 80px;
+    }
+    
+    .tablesprod .label-success {
+        background-color: #d4edda;
+        color: #155724;
+        border: 1px solid #c3e6cb;
+    }
+    
+    .tablesprod .label-info {
+        background-color: #d1ecf1;
+        color: #0c5460;
+        border: 1px solid #bee5eb;
+    }
+    
+    /* SCROLLBAR PERSONALIZADO */
+    .table-scroll-container::-webkit-scrollbar {
+        height: 10px;
+        background-color: #f8f9fa;
+        border-radius: 0 0 8px 8px;
+    }
+    
+    .table-scroll-container::-webkit-scrollbar-track {
+        background-color: #f1f1f1;
+        border-radius: 0 0 8px 8px;
+    }
+    
+    .table-scroll-container::-webkit-scrollbar-thumb {
+        background-color: #adb5bd;
+        border-radius: 10px;
+        border: 2px solid #f1f1f1;
+    }
+    
+    .table-scroll-container::-webkit-scrollbar-thumb:hover {
+        background-color: #6c757d;
+    }
+    
+    /* INDICADOR VISUAL DE SCROLL */
+    .table-scroll-container::after {
+        content: "↔";
+        position: absolute;
+        right: 15px;
+        bottom: 5px;
+        color: #adb5bd;
+        font-size: 14px;
+        opacity: 0.7;
+        pointer-events: none;
+    }
+    
+    /* RESPONSIVE ADAPTATIONS */
+    @media (max-width: 768px) {
+        .table-scroll-container {
+            border-radius: 6px;
+            margin-bottom: 15px;
+        }
+        
+        .tablesprod thead th,
+        .tablesprod tbody td {
+            padding: 10px 12px;
+            font-size: 14px;
+        }
+        
+        .tablesprod .btn-primaryfechas,
+        .tablesprod .btn-successfechas,
+        .tablesprod .btn-dangerfechas,
+        .tablesprod .btn-submit {
+            padding: 5px 10px;
+            font-size: 11px;
+            min-width: 60px;
+        }
+        
+        .tablesprod .label {
+            padding: 3px 8px;
+            font-size: 11px;
+            min-width: 70px;
+        }
+    }
+    
+    /* ANIMACIÓN DE CARGA */
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(5px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    
+    .tablesprod tbody tr {
+        animation: fadeIn 0.3s ease-out;
+    }
+    
+    /* EFECTO DE SOMBRA AL SCROLLEAR */
+    .table-scroll-container.scrolling {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    }
+
+/* Hover sobre encabezados */
+.table thead th:hover,
+.tables thead th:hover,
+.tabla-contenido-ajustado th:hover {
+    background-color: #126dc9a6;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.tables {
+text-align: center;
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 10px;
+    background: white;
+    border-radius: 10px;
+    font-size: small;
+    /* background: url(/images/fondo.png) no-repeat center center; */
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.85);
+    background-blend-mode: lighten;
+    max-width: 100%;
+}
+
+
+/* ============================================================
+   ICONOS DE ORDENAMIENTO (↑ ↓)
+   ============================================================ */
+.th-sortable {
+    position: relative;
+    padding-right: 22px !important;
+}
+
+.th-sortable::after {
+    content: "⇅";           /* Icono doble flecha */
+    font-size: 12px;
+    position: absolute;
+    right: 6px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.5;
+    transition: opacity 0.2s ease;
+}
+
+.th-sortable:hover::after {
+    opacity: 1;
+}
+
+/* Estado orden ascendente */
+.th-asc::after {
+    content: "↑";
+    opacity: 1 !important;
+}
+
+/* Estado orden descendente */
+.th-desc::after {
+    content: "↓";
+    opacity: 1 !important;
+}
+
+/* ============================================================
+   ENCABEZADOS RESPONSIVE
+   - Para pantallas pequeñas oculta texto largo
+   - Mantiene iconos visibles
+   ============================================================ */
+@media (max-width: 768px) {
+    .table thead th,
+    .tablesprod thead th {
+        font-size: 12px;
+        padding: 8px 10px;
+    }
+}
+
+/* Ocultar columnas opcionales en móvil (ajusta según tu uso) */
+@media (max-width: 576px) {
+    .th-hide-mobile {
+        display: none;
+    }
+}

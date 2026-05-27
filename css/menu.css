@@ -1,0 +1,54 @@
+  .col-md-10 {
+    flex: 0 0 auto;
+    width: 83.33333333%;
+    background: linear-gradient(to bottom, silver, rgb(65, 65, 65));
+  }
+  .transparente {
+    padding: 7px;
+    color: #ca1919;
+    font-size: 14px;
+    font-weight: inherit;
+}
+.ul{
+  position: absolute;
+  inset: 0px auto auto 0px;
+  margin: 0px;
+  transform: translate(5px, 45px);
+}
+.lis{
+  background-color: rgba(236, 175, 57, 0.2);
+  width: auto;
+  height: 55px;
+  margin: -8px;
+}
+
+.containerm {
+  display: flex;
+  height: 100vh;
+}
+
+.menu-frame {
+width: 230px;
+border: none;
+margin-left: 0px;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+  background-color: #f0f0f0;
+  opacity: 0.9;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+    width: 100%;
+    background-color: #f1f1f1;
+    padding: 10px;
+    position: relative;
+    left: 0;
+    top: 0;
+}

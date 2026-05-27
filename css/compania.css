@@ -1,0 +1,76 @@
+.form-rowc {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 25px;
+    margin-left: 45px;
+    padding: 0px;
+  }
+
+  .form-rowag {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: auto;
+    margin-left: 10px;
+    padding: 0px;
+  }
+
+  .form-rowcus {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 25px;
+    margin-left: auto;
+    padding: 5px;
+  }
+
+  .form-rowci {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 0;
+    margin-left: 25%;
+    padding: 0px;
+  }
+
+  .form-groupc {
+    margin-bottom: -0.5rem;
+    padding: 10px;
+    text-align: inherit;
+    margin-left: 0;
+  }
+
+  .scrollablec {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    overflow: auto;
+      overflow-x: auto;
+    overflow-x: auto;
+    overflow-x: hidden;
+    border: 1px solid #ccc;
+    padding: 0%;
+    margin-left: 0;
+  }
+
+  .formulariocajac {
+    width: 100%;
+    height: 100%;
+    position: inherit;
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+    border: 0 solid rgb(0, 0, 0);
+    border-radius: 30px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    max-width: 85%;
+  }
+  .lis {
+    background-color: rgba(236, 175, 57, 0.2);
+    width: auto;
+    height: 55px;
+    margin: -8px;
+  }
+
+  .logo {
+    width: 100px;
+    height: auto;
+}

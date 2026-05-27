@@ -1,0 +1,194 @@
+html,
+body {
+  height: 100%;
+}
+
+.p{
+  margin-top: 75px;
+  margin-bottom: 1rem;
+}
+
+.form-signin {
+  margin: 10% auto;
+  padding: 1rem;
+  width: 65%;
+  border: 5px solid #e9ecef;
+  border-radius: 30px;
+  height: max-content;
+  max-width: 75%;
+}
+
+.form-signincus {
+  margin: 5% 15%;
+  padding: 1rem;
+  width: 75%;
+  border: 5px solid #e9ecef;
+  border-radius: 30px;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.form-signincusfec {
+  /*margin: 5% 15%;*/
+  padding: 1rem;
+  width: min-content;
+  border: 5px solid #e9ecef;
+  border-radius: 20px;
+  height: auto;
+  /*max-width: 100%;
+  max-height: 100%;*/
+}
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="email"] {
+  width: 100%;
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  width: 100%;
+  margin-bottom: 0px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.form-floating {
+  width: 100%;
+  position: relative;
+  padding: 2px;
+}
+#scroll {
+  height: auto;
+  line-height: 1em;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  width: 100%;
+  white-space: nowrap;
+  /*border: 1px solid;*/
+  scroll-behavior: smooth;
+}
+.dVolver {
+  text-align: center;
+  padding: 0px;
+  width: 100%;
+  margin-right: 42%;
+}
+.divider {
+  flex-shrink: 0;
+  width: 0.3rem;
+  height: 100vh;
+}
+
+@media screen and (max-width: 1280px) {
+  body,
+  input,
+  select,
+  textarea {
+      font-size: 10pt;
+  }
+  .close:hover {
+      background: #00d9ff;
+  }
+  .modalDialog>div {
+      width: auto;
+  }
+}
+
+.form-signin {
+  margin: 5% auto;
+  padding: 1rem;
+  width: 40%;
+  border: 5px solid #e9ecef;
+  border-radius: 30px;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.form-signinr {
+  margin: 10% auto;
+  padding: 2rem;
+  width: 40%;
+  border: 5px solid #e9ecef;
+  border-radius: 30px;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+@media screen and (main-width: 360px) {
+  body,
+  input,
+  select,
+  textarea {
+      font-size: 9pt;
+  }
+  .close:hover {
+      background: #00d9ff;
+  }
+  .modalDialog>div {
+      width: 90%;
+  }
+  .elemento {
+    margin-top: -17%;
+    margin-bottom: -15%;
+  }
+  .fs-1 {
+    font-size: calc(1.05rem + 1.5vw) !important;
+  }
+}
+@media screen and (min-width: 720px) {
+  body,
+  input,
+  select,
+  textarea {
+      font-size: 9pt;
+  }
+  .close:hover {
+      background: #00d9ff;
+  }
+  .modalDialog>div {
+      width: 90%;
+  }
+  .elemento {
+    margin-top: -17%;
+    margin-bottom: -15%;
+  }
+  .fs-1 {
+    font-size: calc(1.05rem + 1.5vw) !important;
+  }
+}
+
+@media (min-width: 768px) {
+.modal-dialog {
+    max-width: 90%;
+    margin: auto;
+  }
+}
+
+.mt-5 {
+  margin-top: 0.5rem !important;
+}
+
+.mb-4 {
+  margin-bottom: 1.8rem !important;
+  padding: 0.5rem !important;
+  margin-top: 0% !important;
+}
+.mx-auto {
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+.legend {
+  float: none;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 0.5rem;
+  font-size: calc(1.275rem + 0.3vw);
+  line-height: inherit;
+}

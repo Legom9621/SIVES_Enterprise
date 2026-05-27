@@ -1,0 +1,289 @@
+/* Estilos generales */
+:root {
+    --primary-color: #0d6efd;
+    --secondary-color: #6c757d;
+    --danger-color: #dc3545;
+    --success-color: #198754;
+    --light-color: #f8f9fa;
+    --dark-color: #212529;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #555e6d;
+    font-family: "Montserrat", sans-serif;
+}
+
+.login-card {
+    max-width: 300px;
+    width: 70%;
+    border: none;
+    border-radius: 10px;
+    margin: -20px;
+}
+
+.login-card-index {
+    width: 350px;                 /* Más pequeño */
+    background: #ffffff;
+    padding: 18px 20px;           /* Menor padding */
+    border-radius: 14px;
+    box-shadow: 0 5px 14px rgba(0,0,0,0.08);
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+/* ===== TÍTULO ===== */
+.login-card-index h4 {
+    text-align: center;
+    margin-bottom: 18px;          /* Más compacto */
+    color: #006AB2;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* ===== INPUTS ===== */
+.login-card-index input[type="text"],
+.login-card-index input[type="password"] {
+    width: 100%;
+    padding: 6px 7px;            /* Input más pequeño */
+    margin-bottom: 14px;
+    border: 1px solid #cfd0d2;
+    border-radius: 8px;
+    font-size: 13px;
+    outline: none;
+    transition: all .25s ease;
+    background: #f9fafb;
+}
+
+/* EFECTO AL ENFOCAR */
+.login-card-index input:focus {
+    border-color: #006AB2;
+    background: #fff;
+    box-shadow: 0 0 4px rgba(0,106,178,0.25);
+}
+
+/* ===== BOTÓN ===== */
+.login-card-index button {
+    cursor: pointer;
+    transition: background .3s ease, transform .2s ease;
+}
+
+.login-card-index button:hover {
+    background: #005390;
+    transform: translateY(-2px);
+}
+
+.login-card-index button:active {
+    transform: translateY(0px);
+}
+
+.login-logo {
+    max-width: 120px;
+    height: auto;
+}
+
+/* ===== ANIMACIÓN ===== */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Contenedores de formularios */
+.form-container {
+    display: none;
+}
+
+.form-container.active {
+    display: block;
+}
+
+/* Campos de formulario */
+.form-floating {
+    position: relative;
+}
+
+.password-container {
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 10;
+    color: var(--secondary-color);
+}
+
+.toggle-password:hover {
+    color: var(--primary-color);
+}
+
+/* Opciones de login */
+.login-options a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.login-options a:hover {
+    color: #0a58ca;
+    text-decoration: underline;
+}
+
+/* CAPTCHA */
+.captcha-container {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 15px;
+    border: 1px solid #dee2e6;
+
+    width: auto; /* Permite ajuste dinámico */
+    max-width: 100%;
+}
+
+.captcha-container p {
+    margin: 0 0 15px 0;
+    font-weight: 700;
+    color: #002f54;
+    font-size: 13px;
+}
+
+.captcha-question {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: var(--dark-color);
+    width: auto;
+    max-width: 100%;
+}
+
+/* Botones */
+.btn {
+    border-radius: 5px;
+    padding: 4px 5px;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: #ffffff;
+    border-color: #d4ba24ff;
+    color: #092146ff;
+    font-weight: 500;
+}
+
+
+
+/* Footer */
+footer a {
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+}
+
+footer a:hover {
+    color: var(--dark-color);
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+    .login-card {
+        margin: 0 15px;
+        padding: 20px 15px;
+    }
+    
+    .d-flex.justify-content-between {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .d-flex.justify-content-between button {
+        width: 100%;
+    }
+}
+
+.label-success {
+    background-color: #139619;
+    width: auto;
+    padding: 4px;
+    border-radius: 5px;
+    color: #fdfdfd;
+    margin: auto;
+}
+.label-success:hover {
+    background-color: #ffffff;
+    color: #252525;
+}
+
+.label-info {
+    background-color: #924641;
+    width: auto;
+    padding: 4px;
+    border-radius: 5px;
+    color: #f1f50b;
+}
+.label-info:hover {
+    background-color: #f7f7f7;
+    width: auto;
+    padding: 7px;
+    border-radius: 5px;
+    color: #d31c04;
+}
+
+.btn-primaryfechas {
+    background-color: #6fff44;
+    border-color: #000000;
+    width: initial;
+    padding: 3px;
+    border-radius: 7px;
+    margin-left: -10px;
+}
+
+.btn-successfechas {
+    background-color: #d9f84c;
+    border-color: #000000;
+    width: initial;
+    padding: 3px;
+    border-radius: 7px;
+    margin-left: 4px;
+}
+
+.btn-dangerfechas {
+    background-color: #ff7070;
+    border-color: #000000;
+    width: initial;
+    padding: 3px;
+    border-radius: 7px;
+    margin-left: 0px;
+}
+.btn-dangerfechas:hover {
+    background-color: #abf1f3;
+    color: #252525;
+    border: 2px solid #0e0d0d;
+}.btn-successfechas:hover {
+    background-color: #abf1f3;
+    color: #252525;
+    border: 2px solid #0e0d0d;
+}.btn-primaryfechas:hover {
+    background-color: #abf1f3;
+    color: #252525;
+    border: 2px solid #0e0d0d;
+}
+
+fieldset {
+    max-width: 100%;
+    padding: 0;
+    margin-top: 0;
+    border: 0;
+    width: auto;
+}
