@@ -1,5 +1,5 @@
 <?php
-// agency.php
+// agency.php vv
 // ====================== CONTROL DE SESIÓN ====================== //
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
